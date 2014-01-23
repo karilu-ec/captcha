@@ -1,0 +1,9 @@
+Keys were created at the developer portal:
+http://portal.areyouahuman.com/
+
+Username karina.simpson@gmail.com
+
+PUBLISHER_KEY: 98686804b59a490ef1a16b993cb3b551c3ac1561
+SCORING_KEY: 42d6b610573c166c7bea2d86d12e00f890866422
+
+Keys are defined in the ayah_config.php script.
