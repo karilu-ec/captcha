@@ -6,7 +6,7 @@
         }
     else {
         //this happens if the user fails
-        echo "Sorry, but you failed.";
+        echo "I guess we lost the post data";
     }        
 
 ?>
