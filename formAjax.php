@@ -8,22 +8,18 @@ head.js(
    );
 </script>
 <script type="text/javascript">
-         function reloadRecaptcha() {
-           Recaptcha.reload();
-         }
   
       head.ready('jqueryui',function() {
                 
       $(document).ready(function(){
         
        $("#mysubmit").click(function(){
-           
-           
+                      
            $.ajax({
             type: "POST",
             url: "responseCheckAnswerGame.php",
             dataType: "text",
-            data: {my_submit_button_name : $("input[name='my_submit_button_name']").val()                                      
+            data: {my_submit_button_name : $("#mysubmit").val()                                      
             },
             success:function(data) {
              var response = data;
@@ -106,5 +102,5 @@ In this example, the form submits to itself. -->
         ?>
         
         <!-- Make sure the name of your 'Submit' matches the name you used on line 9. -->
-        <input type="button" id="mysubmit" name="my_submit_button_name" value=" Submit ">
+        <input type="button" id="mysubmit" name="my_submit_button_name" value="Submit">
 </form>
